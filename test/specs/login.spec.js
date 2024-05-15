@@ -16,11 +16,9 @@ describe('', () => {
 
         await expect(browser).toHaveUrl(expect.stringContaining('/zenvia-conversion/callback/zenvia'))
 
-        await browser.pause(15000)
+        await browser.pause(7000)
 
         await expect(browser).toHaveUrl(expect.stringContaining('/zenvia-conversion/manager/overview'))
-
-        await browser.pause(15000)
 
     });
 
